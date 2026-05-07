@@ -41,3 +41,4 @@ ssh.exe -F ssh_config_vagrant k3s "kubectl get nodes"
 echo -e "${GREEN}====================================================${NC}"
 echo -e "${GREEN}      DÉPLOIEMENT TERMINÉ ET OPÉRATIONNEL !         ${NC}"
 echo -e "${BLUE}====================================================${NC}"
+#lala

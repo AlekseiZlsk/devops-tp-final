@@ -1,0 +1,26 @@
+Host k3s
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile C:/devops-tp-final/.vagrant/machines/k3s/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  PubkeyAcceptedKeyTypes +ssh-rsa
+  HostKeyAlgorithms +ssh-rsa
+
+Host monitoring
+  HostName 127.0.0.1
+  User vagrant
+  Port 2200
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile C:/devops-tp-final/.vagrant/machines/monitoring/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  PubkeyAcceptedKeyTypes +ssh-rsa
+  HostKeyAlgorithms +ssh-rsa
+
