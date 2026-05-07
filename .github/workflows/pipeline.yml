@@ -1,26 +1,15 @@
 name: CI/CD Pipeline TP Final
-
-# 1. Déclenchement automatique dès que la branche main est modifiée
 on:
   push:
     branches:
       - main
-
 jobs:
   deploiement:
-    # 2. Utilisation obligatoire d'un runner self-hosted comme demandé
     runs-on: self-hosted
-
     steps:
-      # Étape A : Récupérer ton code depuis GitHub sur le runner
       - name: Récupération du code source
         uses: actions/checkout@v4
-
-      # Étape B : Donner les droits d'exécution à tes scripts
       - name: Préparation des permissions
         run: chmod +x deploy.sh
-
-      # Étape C : Lancement de ton script principal
-      # C'est ce script qui doit idéalement configurer l'infra, builder l'image et déployer
       - name: Exécution du déploiement
         run: ./deploy.sh
